@@ -1,7 +1,7 @@
 import { test, expect, vi, afterEach, beforeEach } from "vitest";
 import { render, screen, waitFor, cleanup } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { ChatInterface } from "../ChatInterface";
+import { ChatInterface } from "@/components/chat/ChatInterface";
 import { useChat } from "@/lib/contexts/chat-context";
 
 // Mock the dependencies

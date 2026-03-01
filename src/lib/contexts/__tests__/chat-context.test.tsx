@@ -1,12 +1,12 @@
 import { describe, test, expect, vi, beforeEach, afterEach } from "vitest";
 import { render, screen, waitFor, act, cleanup } from "@testing-library/react";
-import { ChatProvider, useChat } from "../chat-context";
-import { useFileSystem } from "../file-system-context";
+import { ChatProvider, useChat } from "@/lib/contexts/chat-context";
+import { useFileSystem } from "@/lib/contexts/file-system-context";
 import { useChat as useAIChat } from "@ai-sdk/react";
 import * as anonTracker from "@/lib/anon-work-tracker";
 
 // Mock dependencies
-vi.mock("../file-system-context", () => ({
+vi.mock("@/lib/contexts/file-system-context", () => ({
   useFileSystem: vi.fn(),
 }));
 

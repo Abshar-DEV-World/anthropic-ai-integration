@@ -1,6 +1,6 @@
 import { test, expect, vi, beforeEach, afterEach } from "vitest";
 import { renderHook, act, cleanup } from "@testing-library/react";
-import { FileSystemProvider, useFileSystem } from "../file-system-context";
+import { FileSystemProvider, useFileSystem } from "@/lib/contexts/file-system-context";
 import { VirtualFileSystem } from "@/lib/file-system";
 
 // Mock the VirtualFileSystem

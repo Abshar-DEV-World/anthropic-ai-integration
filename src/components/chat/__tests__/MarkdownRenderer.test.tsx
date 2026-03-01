@@ -1,6 +1,6 @@
 import { test, expect, afterEach } from "vitest";
 import { render, screen, cleanup } from "@testing-library/react";
-import { MarkdownRenderer } from "../MarkdownRenderer";
+import { MarkdownRenderer } from "@/components/chat/MarkdownRenderer";
 
 afterEach(() => {
   cleanup();

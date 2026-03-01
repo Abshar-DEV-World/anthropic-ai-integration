@@ -1,7 +1,7 @@
 import { test, expect, vi, afterEach } from "vitest";
 import { render, screen, fireEvent, cleanup } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { MessageInput } from "../MessageInput";
+import { MessageInput } from "@/components/chat/MessageInput";
 
 afterEach(() => {
   cleanup();
