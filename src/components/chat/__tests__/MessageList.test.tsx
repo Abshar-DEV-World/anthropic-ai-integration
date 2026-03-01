@@ -247,9 +247,9 @@ test("MessageList applies correct styling for user vs assistant messages", () =>
   expect(userMessage?.className).toContain("bg-blue-600");
   expect(userMessage?.className).toContain("text-white");
 
-  // Assistant messages should have white background
-  expect(assistantMessage?.className).toContain("bg-white");
-  expect(assistantMessage?.className).toContain("text-neutral-900");
+  // Assistant messages should have card background
+  expect(assistantMessage?.className).toContain("bg-card");
+  expect(assistantMessage?.className).toContain("text-card-foreground");
 });
 
 test("MessageList handles empty content with parts", () => {

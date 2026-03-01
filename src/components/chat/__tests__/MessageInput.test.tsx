@@ -242,7 +242,7 @@ test("textarea has correct styling classes", () => {
   expect(textarea.className).toContain("max-h-[200px]");
   expect(textarea.className).toContain("resize-none");
   expect(textarea.className).toContain("focus:ring-2");
-  expect(textarea.className).toContain("focus:ring-blue-500/10");
+  expect(textarea.className).toContain("focus:ring-ring/20");
 });
 
 test("submit button click triggers form submission", async () => {
